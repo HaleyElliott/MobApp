@@ -1,0 +1,219 @@
+
+/* Class = "IBUIButton"; normalTitle = "My Books"; ObjectID = "0fV-nJ-fzo"; */
+"0fV-nJ-fzo.normalTitle" = "我的书籍：";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "1az-bA-0r2"; */
+"1az-bA-0r2.text" = "标签：";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "1q6-dp-Iu3"; */
+"1q6-dp-Iu3.text" = "标签：";
+
+/* Class = "IBUILabel"; text = "Title:"; ObjectID = "3bR-U3-yrF"; */
+"3bR-U3-yrF.text" = "书名:";
+
+/* Class = "IBUILabel"; text = "Author:"; ObjectID = "61H-if-BJp"; */
+"61H-if-BJp.text" = "作者:";
+
+/* Class = "IBUILabel"; text = "Author:"; ObjectID = "AE4-bo-NGh"; */
+"AE4-bo-NGh.text" = "作者:";
+
+/* Class = "IBUILabel"; text = "Institute:"; ObjectID = "AYn-LX-Pdg"; */
+"AYn-LX-Pdg.text" = "学院:";
+
+/* Class = "IBUILabel"; text = "New Passcode:"; ObjectID = "AsV-UC-yEY"; */
+"AsV-UC-yEY.text" = "新密码:";
+
+/* Class = "IBUIButton"; normalTitle = "Cancel"; ObjectID = "Atd-ca-xNV"; */
+"Atd-ca-xNV.normalTitle" = "取消";
+
+/* Class = "IBUILabel"; text = "Trust Points:"; ObjectID = "BC8-sq-Aml"; */
+"BC8-sq-Aml.text" = "信任点:";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "BPP-P3-Pq3"; */
+"BPP-P3-Pq3.text" = "标签";
+
+/* Class = "IBUILabel"; text = "Username:"; ObjectID = "C9Y-Rz-3Ou"; */
+"C9Y-Rz-3Ou.text" = "用户名:";
+
+/* Class = "IBUIButton"; normalTitle = "New"; ObjectID = "EDW-zs-Ey5"; */
+"EDW-zs-Ey5.normalTitle" = "新书籍";
+
+/* Class = "IBUITextField"; placeholder = "Required"; ObjectID = "EcR-Kb-oiz"; */
+"EcR-Kb-oiz.placeholder" = "必填";
+
+/* Class = "IBUILabel"; text = "98"; ObjectID = "FNC-to-0dU"; */
+"FNC-to-0dU.text" = "98";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "H4H-ea-IGm"; */
+"H4H-ea-IGm.text" = "标签";
+
+/* Class = "IBUILabel"; text = "Institute:"; ObjectID = "HAl-Jf-i6F"; */
+"HAl-Jf-i6F.text" = "学院:";
+
+/* Class = "IBUILabel"; text = "Trust Points: "; ObjectID = "HQq-LS-mYt"; */
+"HQq-LS-mYt.text" = "信任点: ";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Iph-LZ-9DS"; */
+"Iph-LZ-9DS.text" = "Label";
+
+/* Class = "IBUILabel"; text = "_______________________________"; ObjectID = "J0x-3a-VK2"; */
+"J0x-3a-VK2.text" = "_______________________________";
+
+/* Class = "IBUINavigationItem"; title = "Edit User Info"; ObjectID = "KUp-TG-NIb"; */
+"KUp-TG-NIb.title" = "编辑用户信息";
+
+/* Class = "IBUILabel"; text = "Name:"; ObjectID = "KvX-PF-5oQ"; */
+"KvX-PF-5oQ.text" = "姓名:";
+
+/* Class = "IBUIButton"; normalTitle = "Cancel"; ObjectID = "LPo-h7-KFn"; */
+"LPo-h7-KFn.normalTitle" = "取消";
+
+/* Class = "IBUILabel"; text = "Textbook Exchange"; ObjectID = "Lhd-xs-fow"; */
+"Lhd-xs-fow.text" = "交换书籍";
+
+/* Class = "IBUIButton"; normalTitle = "Echange History"; ObjectID = "MZt-w1-YXI"; */
+"MZt-w1-YXI.normalTitle" = "交换历史";
+
+/* Class = "IBUIButton"; normalTitle = "Edit"; ObjectID = "Mcw-4b-cDr"; */
+"Mcw-4b-cDr.normalTitle" = "编辑";
+
+/* Class = "IBUILabel"; text = "Phone:"; ObjectID = "Odd-2L-tYD"; */
+"Odd-2L-tYD.text" = "手机号:";
+
+/* Class = "IBUILabel"; text = "Name: "; ObjectID = "Pdc-yf-4Y2"; */
+"Pdc-yf-4Y2.text" = "姓名: ";
+
+/* Class = "IBUIButton"; normalTitle = "Edit"; ObjectID = "Pza-GC-7ec"; */
+"Pza-GC-7ec.normalTitle" = "编辑";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Qhf-KF-jzm"; */
+"Qhf-KF-jzm.text" = "标签";
+
+/* Class = "IBUIButton"; normalTitle = "Sign up"; ObjectID = "S9W-et-ZBz"; */
+"S9W-et-ZBz.normalTitle" = "注册";
+
+/* Class = "IBUILabel"; text = "Title:"; ObjectID = "UV7-vw-1A0"; */
+"UV7-vw-1A0.text" = "书名:";
+
+/* Class = "IBUILabel"; text = "Name:"; ObjectID = "UYm-D9-3V9"; */
+"UYm-D9-3V9.text" = "姓名:";
+
+/* Class = "IBUIButton"; normalTitle = "Register"; ObjectID = "XkG-Jc-YGI"; */
+"XkG-Jc-YGI.normalTitle" = "注册";
+
+/* Class = "IBUINavigationItem"; title = "Exchange History"; ObjectID = "YeZ-YJ-3Xt"; */
+"YeZ-YJ-3Xt.title" = "交换历史";
+
+/* Class = "IBUILabel"; text = "ISBN:"; ObjectID = "ZB0-Z7-yrK"; */
+"ZB0-Z7-yrK.text" = "ISBN:";
+
+/* Class = "IBUITextField"; placeholder = "Required"; ObjectID = "ZHO-Jo-QVG"; */
+"ZHO-Jo-QVG.placeholder" = "必填";
+
+/* Class = "IBUILabel"; text = "Add a Book"; ObjectID = "am5-ot-0bG"; */
+"am5-ot-0bG.text" = "添加书籍";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "bIh-6A-tab"; */
+"bIh-6A-tab.text" = "标签";
+
+/* Class = "IBUINavigationItem"; title = "Register"; ObjectID = "bUg-or-Kit"; */
+"bUg-or-Kit.title" = "注册";
+
+/* Class = "IBUIButton"; normalTitle = "Log in"; ObjectID = "bYp-13-saz"; */
+"bYp-13-saz.normalTitle" = "登陆";
+
+/* Class = "IBUILabel"; text = "ISBN:"; ObjectID = "cWJ-La-A8V"; */
+"cWJ-La-A8V.text" = "ISBN:";
+
+/* Class = "IBUILabel"; text = "Username:"; ObjectID = "ctF-Rg-sjj"; */
+"ctF-Rg-sjj.text" = "用户名:";
+
+/* Class = "IBUILabel"; text = "Institute: "; ObjectID = "eLe-qL-0ZS"; */
+"eLe-qL-0ZS.text" = "学院: ";
+
+/* Class = "IBUIButton"; normalTitle = "Edit"; ObjectID = "enA-7d-sLu"; */
+"enA-7d-sLu.normalTitle" = "编辑";
+
+/* Class = "IBUIButton"; normalTitle = "Click Here If Book Has Been Exchanged"; ObjectID = "ex7-QG-BW0"; */
+"ex7-QG-BW0.normalTitle" = "若已交换单击此处";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "fzL-ko-tf1"; */
+"fzL-ko-tf1.text" = "标签";
+
+/* Class = "IBUILabel"; text = "Book Details"; ObjectID = "gC4-Dh-cZH"; */
+"gC4-Dh-cZH.text" = "详细信息";
+
+/* Class = "IBUILabel"; text = "Passcode:"; ObjectID = "gtb-Ug-aNI"; */
+"gtb-Ug-aNI.text" = "密码:";
+
+/* Class = "IBUINavigationItem"; title = "Book Market"; ObjectID = "io4-pE-Hul"; */
+"io4-pE-Hul.title" = "书店";
+
+/* Class = "IBUILabel"; text = "Phone:"; ObjectID = "jdi-xj-Aei"; */
+"jdi-xj-Aei.text" = "手机号:";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "jkQ-0Q-zZM"; */
+"jkQ-0Q-zZM.text" = "标签";
+
+/* Class = "IBUILabel"; text = "Title:"; ObjectID = "kHE-HK-pyI"; */
+"kHE-HK-pyI.text" = "书名:";
+
+/* Class = "IBUILabel"; text = "Edit Book"; ObjectID = "l7i-Uy-13q"; */
+"l7i-Uy-13q.text" = "编辑书籍";
+
+/* Class = "IBUILabel"; text = "Owner:"; ObjectID = "m5I-QI-XCa"; */
+"m5I-QI-XCa.text" = "所有者:";
+
+/* Class = "IBUILabel"; text = "Author:"; ObjectID = "mvf-Lr-qZg"; */
+"mvf-Lr-qZg.text" = "作者:";
+
+/* Class = "IBUINavigationItem"; title = "Account Info"; ObjectID = "njM-LO-G6y"; */
+"njM-LO-G6y.title" = "账户信息";
+
+/* Class = "IBUILabel"; text = "Phone: "; ObjectID = "nza-IT-Zoi"; */
+"nza-IT-Zoi.text" = "电话: ";
+
+/* Class = "IBUILabel"; text = "Email: "; ObjectID = "o0v-Oc-j4Z"; */
+"o0v-Oc-j4Z.text" = "电子邮件: ";
+
+/* Class = "IBUIButton"; normalTitle = "Add Book"; ObjectID = "pnb-p2-8UP"; */
+"pnb-p2-8UP.normalTitle" = "添加";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "rek-ke-UsQ"; */
+"rek-ke-UsQ.text" = "标签";
+
+/* Class = "IBUIButton"; normalTitle = "Log out"; ObjectID = "rhH-Cy-DUa"; */
+"rhH-Cy-DUa.normalTitle" = "登出";
+
+/* Class = "IBUITextField"; placeholder = "Required"; ObjectID = "s7i-ZI-hiZ"; */
+"s7i-ZI-hiZ.placeholder" = "必填";
+
+/* Class = "IBUILabel"; text = "Email:"; ObjectID = "srd-1x-ctX"; */
+"srd-1x-ctX.text" = "电子邮件:";
+
+/* Class = "IBUIButton"; normalTitle = "A-Z"; ObjectID = "tTc-xl-vjQ"; */
+"tTc-xl-vjQ.normalTitle" = "A-Z";
+
+/* Class = "IBUILabel"; text = "Passcode:"; ObjectID = "tvf-Ap-Het"; */
+"tvf-Ap-Het.text" = "密码:";
+
+/* Class = "IBUILabel"; text = "Email:"; ObjectID = "uBr-Dh-Qfw"; */
+"uBr-Dh-Qfw.text" = "电子邮件:";
+
+/* Class = "IBUINavigationItem"; title = "My Books"; ObjectID = "vAO-cX-TGw"; */
+"vAO-cX-TGw.title" = "我的书籍";
+
+/* Class = "IBUITextView"; text = "temp"; ObjectID = "vYX-eA-Zaq"; */
+"vYX-eA-Zaq.text" = "temp";
+
+/* Class = "IBUIButton"; normalTitle = "Save Changes"; ObjectID = "w13-Na-J2T"; */
+"w13-Na-J2T.normalTitle" = "保存更改";
+
+/* Class = "IBUILabel"; text = "ISBN:"; ObjectID = "xAm-3c-wpA"; */
+"xAm-3c-wpA.text" = "ISBN:";
+
+/* Class = "IBUIButton"; normalTitle = "Book Market"; ObjectID = "zSg-fL-QDw"; */
+"zSg-fL-QDw.normalTitle" = "书店";
+
+/* Class = "IBUILabel"; text = "Email:"; ObjectID = "zYr-RQ-fjE"; */
+"zYr-RQ-fjE.text" = "电子邮件:";
