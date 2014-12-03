@@ -4,7 +4,7 @@
 //
 //  Created by Haley Elliott on 11/3/14.
 //
-//  Modified By JINGXIAN FENG on 12/2/14 with image function.
+//  Modified By JINGXIAN FENG on 12/2/14 with book cover.
 //
 
 #import "AddBookViewController.h"
@@ -89,7 +89,7 @@
     _authorTxt.text = @"";
     _titleTxt.text =@"";
     image = [UIImage imageNamed:@"book_cover_not_found.jpg"];
-    [imageView setImage:image];    
+    [imageView setImage:image];
 }
 
 - (IBAction)takePhoto:(id)sender {
@@ -114,7 +114,7 @@
     pickerLib = [[UIImagePickerController alloc] init];
     pickerLib.delegate = self;
     
-    // Set source to the camera
+    // Set source to the photo library
     pickerLib.sourceType =  UIImagePickerControllerSourceTypePhotoLibrary;
     
     // Show image picker

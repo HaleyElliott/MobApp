@@ -4,6 +4,7 @@
 //
 //  Created by Haley Elliott on 11/4/14.
 //
+//  Modified By JINGXIAN FENG on 12/2/14 with book cover.
 //
 
 #import "BookDetailViewController.h"
@@ -42,6 +43,17 @@
         [query whereKey:@"username" equalTo:self.detailItem[@"ownerID"]]; // find all the women
         NSArray *girls = [query findObjects];
         PFUser * user = [girls objectAtIndex:0];
+        // Retrieving the image back involves calling one of the getData variants on the PFFile
+        PFFile *imageFile = self.detailItem[@"imageFile"];
+        [imageFile getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
+            if (!error) {
+                image = [UIImage imageWithData:imageData];
+            }
+            else {
+                image = [UIImage imageNamed:@"book_cover_not_found.jpg"];
+            }
+            [imageView setImage:image];
+        }];
     
         self.titleL.text =[self.detailItem objectForKey:@"title"];
         self.authorL.text = self.detailItem[@"author"];
