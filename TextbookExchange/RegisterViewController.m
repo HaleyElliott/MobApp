@@ -47,7 +47,7 @@
         user[@"name"] = _name.text;
         user.email = _email.text;
         user[@"phone"] = _phone.text;
-        user[@"points"] = 0;
+        user[@"points"] = [NSNumber numberWithInt:0];
         
         // This call will asynchronously create a new user in Parse App.
         // It also will make sure both the username and email are unique
