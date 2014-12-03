@@ -4,7 +4,7 @@
 //
 //  Created by Haley Elliott on 11/3/14.
 //
-//  Modified By JINGXIAN FENG on 12/2/14 with image function.
+//  Modified By JINGXIAN FENG on 12/2/14 with book cover.
 //
 
 #import <UIKit/UIKit.h>
