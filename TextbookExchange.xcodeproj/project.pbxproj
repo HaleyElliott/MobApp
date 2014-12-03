@@ -41,6 +41,8 @@
 		367A19CF19DD05CA006B876C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 367A19CD19DD05CA006B876C /* InfoPlist.strings */; };
 		367A19D119DD05CA006B876C /* TextbookExchangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 367A19D019DD05CA006B876C /* TextbookExchangeTests.m */; };
 		36B7ADB21A2E9B8200DE2B2D /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B7ADB11A2E9B8200DE2B2D /* Firebase.framework */; };
+		36B7ADB51A2EA3EF00DE2B2D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B7ADB41A2EA3EF00DE2B2D /* libicucore.dylib */; };
+		36B7ADB71A2EA41E00DE2B2D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B7ADB61A2EA41E00DE2B2D /* libc++.dylib */; };
 		36E0339A1A0B1D83003625FD /* EditBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E033991A0B1D83003625FD /* EditBookViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +104,8 @@
 		367A19CE19DD05CA006B876C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		367A19D019DD05CA006B876C /* TextbookExchangeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextbookExchangeTests.m; sourceTree = "<group>"; };
 		36B7ADB11A2E9B8200DE2B2D /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		36B7ADB41A2EA3EF00DE2B2D /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		36B7ADB61A2EA41E00DE2B2D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		36E033981A0B1D83003625FD /* EditBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBookViewController.h; sourceTree = "<group>"; };
 		36E033991A0B1D83003625FD /* EditBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBookViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,13 +116,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				364CC0D219F4648B008AB4D3 /* SystemConfiguration.framework in Frameworks */,
-				364CC0D019F46482008AB4D3 /* StoreKit.framework in Frameworks */,
 				364CC0CE19F46479008AB4D3 /* Security.framework in Frameworks */,
+				364CC0C419F46447008AB4D3 /* CFNetwork.framework in Frameworks */,
+				36B7ADB71A2EA41E00DE2B2D /* libc++.dylib in Frameworks */,
+				36B7ADB51A2EA3EF00DE2B2D /* libicucore.dylib in Frameworks */,
+				364CC0D019F46482008AB4D3 /* StoreKit.framework in Frameworks */,
 				364CC0CC19F46471008AB4D3 /* QuartzCore.framework in Frameworks */,
 				364CC0CA19F46467008AB4D3 /* MobileCoreServices.framework in Frameworks */,
 				364CC0C819F4645F008AB4D3 /* libz.dylib in Frameworks */,
 				364CC0C619F46455008AB4D3 /* CoreLocation.framework in Frameworks */,
-				364CC0C419F46447008AB4D3 /* CFNetwork.framework in Frameworks */,
 				364CC0C219F4643D008AB4D3 /* AudioToolbox.framework in Frameworks */,
 				367A19A819DD05C9006B876C /* CoreGraphics.framework in Frameworks */,
 				36B7ADB21A2E9B8200DE2B2D /* Firebase.framework in Frameworks */,
@@ -145,12 +151,12 @@
 		367A199919DD05C9006B876C = {
 			isa = PBXGroup;
 			children = (
+				367A19A419DD05C9006B876C /* Frameworks */,
 				36B7ADB11A2E9B8200DE2B2D /* Firebase.framework */,
 				364CC0BD19F4640C008AB4D3 /* Bolts.framework */,
 				364CC0BE19F4640C008AB4D3 /* Parse.framework */,
 				367A19AB19DD05C9006B876C /* TextbookExchange */,
 				367A19CA19DD05CA006B876C /* TextbookExchangeTests */,
-				367A19A419DD05C9006B876C /* Frameworks */,
 				367A19A319DD05C9006B876C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -167,6 +173,8 @@
 		367A19A419DD05C9006B876C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36B7ADB61A2EA41E00DE2B2D /* libc++.dylib */,
+				36B7ADB41A2EA3EF00DE2B2D /* libicucore.dylib */,
 				364CC0D119F4648B008AB4D3 /* SystemConfiguration.framework */,
 				364CC0CF19F46482008AB4D3 /* StoreKit.framework */,
 				364CC0CD19F46479008AB4D3 /* Security.framework */,
@@ -485,6 +493,7 @@
 				GCC_PREFIX_HEADER = "TextbookExchange/TextbookExchange-Prefix.pch";
 				INFOPLIST_FILE = "TextbookExchange/TextbookExchange-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -503,6 +512,7 @@
 				GCC_PREFIX_HEADER = "TextbookExchange/TextbookExchange-Prefix.pch";
 				INFOPLIST_FILE = "TextbookExchange/TextbookExchange-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
