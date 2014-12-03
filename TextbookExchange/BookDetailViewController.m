@@ -11,6 +11,7 @@
 
 @interface BookDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *editButt;
+@property (weak, nonatomic) IBOutlet UIButton *chatterButt;
 
 @property (weak, nonatomic) IBOutlet UITextView *emailTView;
 - (void)configureView;
@@ -56,9 +57,11 @@
         PFUser *currentUser = [PFUser currentUser];
         if([self.detailItem[@"ownerID"] isEqualToString:currentUser.username]){
             self.editButt.hidden = NO;
+            self.chatterButt.hidden = YES;
         }
         else{
             self.editButt.hidden = YES;
+            self.chatterButt.hidden = NO;
         }
       
     }

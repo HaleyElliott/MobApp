@@ -42,6 +42,7 @@
 		367A19D119DD05CA006B876C /* TextbookExchangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 367A19D019DD05CA006B876C /* TextbookExchangeTests.m */; };
 		36B7ADB51A2EA3EF00DE2B2D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B7ADB41A2EA3EF00DE2B2D /* libicucore.dylib */; };
 		36B7ADB71A2EA41E00DE2B2D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B7ADB61A2EA41E00DE2B2D /* libc++.dylib */; };
+		36B7ADC61A2EC5E800DE2B2D /* chatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ADC51A2EC5E800DE2B2D /* chatCell.m */; };
 		36E0339A1A0B1D83003625FD /* EditBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E033991A0B1D83003625FD /* EditBookViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,8 @@
 		367A19D019DD05CA006B876C /* TextbookExchangeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextbookExchangeTests.m; sourceTree = "<group>"; };
 		36B7ADB41A2EA3EF00DE2B2D /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		36B7ADB61A2EA41E00DE2B2D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		36B7ADC41A2EC5E800DE2B2D /* chatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chatCell.h; sourceTree = "<group>"; };
+		36B7ADC51A2EC5E800DE2B2D /* chatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chatCell.m; sourceTree = "<group>"; };
 		36E033981A0B1D83003625FD /* EditBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBookViewController.h; sourceTree = "<group>"; };
 		36E033991A0B1D83003625FD /* EditBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBookViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +197,8 @@
 				367A19B419DD05CA006B876C /* AppDelegate.h */,
 				367A19B519DD05CA006B876C /* AppDelegate.m */,
 				367A19B719DD05CA006B876C /* Main.storyboard */,
+				36B7ADC41A2EC5E800DE2B2D /* chatCell.h */,
+				36B7ADC51A2EC5E800DE2B2D /* chatCell.m */,
 				364CC0FF1A0B27E3008AB4D3 /* ExHistoryViewController.h */,
 				364CC1001A0B27E3008AB4D3 /* ExHistoryViewController.m */,
 				36E033981A0B1D83003625FD /* EditBookViewController.h */,
@@ -357,6 +362,7 @@
 				367A19B219DD05CA006B876C /* main.m in Sources */,
 				364CC0D519F47105008AB4D3 /* RegisterViewController.m in Sources */,
 				3668D9441A08B8AD00228F6A /* BookDetailViewController.m in Sources */,
+				36B7ADC61A2EC5E800DE2B2D /* chatCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
