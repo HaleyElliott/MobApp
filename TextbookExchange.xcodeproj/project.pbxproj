@@ -43,6 +43,7 @@
 		36B7ADB51A2EA3EF00DE2B2D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B7ADB41A2EA3EF00DE2B2D /* libicucore.dylib */; };
 		36B7ADB71A2EA41E00DE2B2D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B7ADB61A2EA41E00DE2B2D /* libc++.dylib */; };
 		36B7ADC61A2EC5E800DE2B2D /* chatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ADC51A2EC5E800DE2B2D /* chatCell.m */; };
+		36B7ADC91A2ED02900DE2B2D /* DMChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ADC81A2ED02900DE2B2D /* DMChatRoomViewController.m */; };
 		36E0339A1A0B1D83003625FD /* EditBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E033991A0B1D83003625FD /* EditBookViewController.m */; };
 		D638A3EE1A2EC68D004AB573 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D638A3ED1A2EC68D004AB573 /* PhotosViewController.m */; };
 		D638A3F41A2EC9B4004AB573 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D638A3F31A2EC9B4004AB573 /* MBProgressHUD.m */; };
@@ -109,6 +110,8 @@
 		36B7ADB61A2EA41E00DE2B2D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		36B7ADC41A2EC5E800DE2B2D /* chatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chatCell.h; sourceTree = "<group>"; };
 		36B7ADC51A2EC5E800DE2B2D /* chatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chatCell.m; sourceTree = "<group>"; };
+		36B7ADC71A2ED02900DE2B2D /* DMChatRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMChatRoomViewController.h; sourceTree = "<group>"; };
+		36B7ADC81A2ED02900DE2B2D /* DMChatRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMChatRoomViewController.m; sourceTree = "<group>"; };
 		36E033981A0B1D83003625FD /* EditBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBookViewController.h; sourceTree = "<group>"; };
 		36E033991A0B1D83003625FD /* EditBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBookViewController.m; sourceTree = "<group>"; };
 		D638A3EC1A2EC68D004AB573 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 				367A19B419DD05CA006B876C /* AppDelegate.h */,
 				367A19B519DD05CA006B876C /* AppDelegate.m */,
 				367A19B719DD05CA006B876C /* Main.storyboard */,
+				36B7ADC71A2ED02900DE2B2D /* DMChatRoomViewController.h */,
+				36B7ADC81A2ED02900DE2B2D /* DMChatRoomViewController.m */,
 				36B7ADC41A2EC5E800DE2B2D /* chatCell.h */,
 				36B7ADC51A2EC5E800DE2B2D /* chatCell.m */,
 				D638A3EC1A2EC68D004AB573 /* PhotosViewController.h */,
@@ -362,6 +367,7 @@
 			files = (
 				367A19BC19DD05CA006B876C /* ViewController.m in Sources */,
 				36E0339A1A0B1D83003625FD /* EditBookViewController.m in Sources */,
+				36B7ADC91A2ED02900DE2B2D /* DMChatRoomViewController.m in Sources */,
 				D638A3EE1A2EC68D004AB573 /* PhotosViewController.m in Sources */,
 				364CC1011A0B27E3008AB4D3 /* ExHistoryViewController.m in Sources */,
 				364CC0FB1A06F9CB008AB4D3 /* EditUserInfoViewController.m in Sources */,

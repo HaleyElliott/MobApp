@@ -73,7 +73,6 @@
     // Retrieve the object by id
     [query getObjectInBackgroundWithId: temp.objectId block:^(PFObject *book, NSError *error) {
         
-        // Now let's update it with some new data. In this case, only cheatMode and score
         // will get sent to the cloud. playerName hasn't changed.
         book[@"author"] = self.authorLBL.text;
         book[@"ISBN"] = self.isbnLBL.text;

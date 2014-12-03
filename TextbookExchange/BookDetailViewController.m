@@ -8,6 +8,7 @@
 
 #import "BookDetailViewController.h"
 #import "EditBookViewController.h"
+#import "DMChatRoomViewController.h"
 
 @interface BookDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *editButt;
@@ -85,6 +86,10 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"editBook"]) {
+        PFObject *object = self.detailItem;
+        [[segue destinationViewController] setDetailItem:object];
+    }
+    else if ([[segue identifier] isEqualToString:@"chatter"]) {
         PFObject *object = self.detailItem;
         [[segue destinationViewController] setDetailItem:object];
     }
