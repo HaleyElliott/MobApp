@@ -86,17 +86,11 @@ BOOL _reloading;
     }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
-
-#pragma mark - Parse
 
 
 #pragma mark - Table view delegate
@@ -111,15 +105,19 @@ BOOL _reloading;
     NSUInteger row = [self.chatData count]-[indexPath row]-1;
  
         NSString *chatText = [[self.chatData objectAtIndex:row] objectForKey:@"message"];
-        cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
-        UIFont *font = [UIFont systemFontOfSize:14];
-        CGSize size = [chatText sizeWithFont:font constrainedToSize:CGSizeMake(225.0f, 1000.0f) lineBreakMode:UILineBreakModeCharacterWrap];
-        cell.textString.frame = CGRectMake(75, 14, size.width +20, size.height + 20);
         cell.textString.font = [UIFont fontWithName:@"Helvetica" size:14.0];
         cell.textString.text = chatText;
         [cell.textString sizeToFit];
     
-        cell.timeLabel.text = [[self.chatData objectAtIndex:row] objectForKey:@"createdAt"];
+    PFObject *object = [self.chatData objectAtIndex:row]; // A PFObject
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"M/DD hh:mm"];
+    NSString *date = [df stringFromDate:object.createdAt];
+    
+    
+    
+    
+        cell.timeLabel.text = date;
         
         cell.userLabel.text = [NSString stringWithFormat:@"%@:", [[self.chatData objectAtIndex:row] objectForKey:@"username"]];
     
@@ -128,12 +126,7 @@ BOOL _reloading;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *cellText = [[self.chatData objectAtIndex:self.chatData.count-indexPath.row-1] objectForKey:@"text"];
-    UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:14.0];
-    CGSize constraintSize = CGSizeMake(225.0f, MAXFLOAT);
-    CGSize labelSize = [cellText sizeWithFont:cellFont constrainedToSize:constraintSize lineBreakMode:UILineBreakModeWordWrap];
-    
-    return labelSize.height + 40;
+    return 40;
 }
 
 
@@ -155,37 +148,6 @@ BOOL _reloading;
     [self.tfEntry resignFirstResponder];
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    NSLog(@"the text content%@",tfEntry.text);
-    [textField resignFirstResponder];
-    
-    if (tfEntry.text.length>0) {
-        // updating the table immediately
-        NSArray *keys = [NSArray arrayWithObjects:@"text", @"userName", @"date", nil];
-        NSArray *objects = [NSArray arrayWithObjects:tfEntry.text, userName, [NSDate date], nil];
-        NSDictionary *dictionary = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
-        
-        
-        NSMutableArray *insertIndexPaths = [[NSMutableArray alloc] init];
-        NSIndexPath *newPath = [NSIndexPath indexPathForRow:0 inSection:0];
-        [insertIndexPaths addObject:newPath];
-        [chatTable beginUpdates];
-        [chatTable insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationTop];
-        [chatTable endUpdates];
-        [chatTable reloadData];
-        
-        // going for the parsing
-        PFObject *newMessage = [PFObject objectWithClassName:@"chatroom"];
-        [newMessage setObject:tfEntry.text forKey:@"message"];
-        [newMessage setObject:userName forKey:@"username"];
-        [newMessage saveInBackground];
-        [self loadTableData];
-        tfEntry.text = @"";
-    }
-    
-    return NO;
-}
 
 
 -(void) registerForKeyboardNotifications
@@ -250,6 +212,8 @@ BOOL _reloading;
     chat[@"message"] = self.tfEntry.text;
     chat[@"chatRoom"] = self.chatRoom;
     [chat saveInBackground];
+    self.tfEntry.text = @"";
+    [self loadTableData];
     [self.chatTable reloadData];
 
     

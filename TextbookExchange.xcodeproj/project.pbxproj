@@ -206,8 +206,6 @@
 				36B7ADC81A2ED02900DE2B2D /* DMChatRoomViewController.m */,
 				36B7ADC41A2EC5E800DE2B2D /* chatCell.h */,
 				36B7ADC51A2EC5E800DE2B2D /* chatCell.m */,
-				D638A3EC1A2EC68D004AB573 /* PhotosViewController.h */,
-				D638A3ED1A2EC68D004AB573 /* PhotosViewController.m */,
 				364CC0FF1A0B27E3008AB4D3 /* ExHistoryViewController.h */,
 				364CC1001A0B27E3008AB4D3 /* ExHistoryViewController.m */,
 				36E033981A0B1D83003625FD /* EditBookViewController.h */,
@@ -506,7 +504,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextbookExchange/TextbookExchange-Prefix.pch";
 				INFOPLIST_FILE = "TextbookExchange/TextbookExchange-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -525,7 +523,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextbookExchange/TextbookExchange-Prefix.pch";
 				INFOPLIST_FILE = "TextbookExchange/TextbookExchange-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
