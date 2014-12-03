@@ -669,7 +669,7 @@
                     <navigationItem key="navigationItem" id="dbk-U0-2mG"/>
                     <connections>
                         <outlet property="authorL" destination="bIh-6A-tab" id="2OG-Zk-J6P"/>
-                        <outlet property="chatterButt" destination="L9u-43-7Hk" id="GSn-QJ-5U3"/>
+                        <outlet property="chatterButt" destination="KaU-19-o7m" id="m05-6g-XgD"/>
                         <outlet property="editButt" destination="Mcw-4b-cDr" id="7wM-Mb-hV6"/>
                         <outlet property="emailTView" destination="vYX-eA-Zaq" id="b7J-4R-Q4n"/>
                         <outlet property="imageView" destination="WP7-Fx-Kac" id="rKR-Du-D4g"/>
