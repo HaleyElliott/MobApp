@@ -455,49 +455,6 @@
             </objects>
             <point key="canvasLocation" x="1817" y="21"/>
         </scene>
-        <!--Photos View Controller-->
-        <scene sceneID="xlg-Xd-rmh">
-            <objects>
-                <viewController id="RfL-qr-aQC" customClass="PhotosViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zDz-E0-LzH"/>
-                        <viewControllerLayoutGuide type="bottom" id="c4g-34-JfN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rc5-WE-Jh8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Hl-pd-XkY">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
-                            </scrollView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P0A-es-xW6">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Photos" id="gkK-ca-apc">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="lo2-u1-UCz">
-                                            <connections>
-                                                <action selector="cameraButtonTapped:" destination="RfL-qr-aQC" id="ni7-1r-BHW"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="bXQ-Dr-wxJ">
-                                            <connections>
-                                                <action selector="refresh:" destination="RfL-qr-aQC" id="NHf-UL-gcj"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="photoScrollView" destination="3Hl-pd-XkY" id="Sa2-7q-qi3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cGK-kq-wPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1939" y="-678"/>
-        </scene>
         <!--Add Book View Controller-->
         <scene sceneID="CN1-NK-su6">
             <objects>
@@ -511,33 +468,33 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvf-Lr-qZg">
-                                <rect key="frame" x="38" y="119" width="56" height="21"/>
+                                <rect key="frame" x="16" y="333" width="56" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ISBN:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAm-3c-wpA">
-                                <rect key="frame" x="38" y="156" width="45" height="21"/>
+                                <rect key="frame" x="27" y="371" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHE-HK-pyI">
-                                <rect key="frame" x="38" y="190" width="37" height="21"/>
+                                <rect key="frame" x="35" y="409" width="37" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lK9-wR-K6H">
-                                <rect key="frame" x="83" y="186" width="188" height="30"/>
+                                <rect key="frame" x="80" y="405" width="224" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GFS-4W-EIH">
-                                <rect key="frame" x="92" y="152" width="179" height="30"/>
+                                <rect key="frame" x="80" y="367" width="224" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6TZ-Ir-OZj">
-                                <rect key="frame" x="105" y="114" width="166" height="30"/>
+                                <rect key="frame" x="80" y="329" width="224" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -547,12 +504,42 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnb-p2-8UP">
-                                <rect key="frame" x="126" y="260" width="69" height="30"/>
+                                <rect key="frame" x="121" y="439" width="69" height="30"/>
                                 <state key="normal" title="Add Book">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="AddBookBut:" destination="4by-rM-8NP" eventType="touchUpInside" id="yMW-uc-cm0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Br2-s0-W9P">
+                                <rect key="frame" x="35" y="121" width="162" height="191"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vho-eO-H2g">
+                                <rect key="frame" x="211" y="206" width="54" height="30"/>
+                                <state key="normal" title="Camera">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="4by-rM-8NP" eventType="touchUpInside" id="Arg-Dp-1Au"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKM-XO-Tho">
+                                <rect key="frame" x="211" y="244" width="93" height="30"/>
+                                <state key="normal" title="Photo Library">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="choosePic:" destination="4by-rM-8NP" eventType="touchUpInside" id="D5C-dJ-sVX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtW-zE-oFs">
+                                <rect key="frame" x="211" y="282" width="83" height="30"/>
+                                <state key="normal" title="Clear Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearImage:" destination="4by-rM-8NP" eventType="touchUpInside" id="1GF-kZ-2K4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -562,6 +549,7 @@
                     <connections>
                         <outlet property="ISBNtxt" destination="GFS-4W-EIH" id="ig5-CR-7Hj"/>
                         <outlet property="authorTxt" destination="6TZ-Ir-OZj" id="aNL-PE-HET"/>
+                        <outlet property="imageView" destination="Br2-s0-W9P" id="npt-09-wmH"/>
                         <outlet property="titleTxt" destination="lK9-wR-K6H" id="tuI-Xg-vpM"/>
                     </connections>
                 </viewController>
