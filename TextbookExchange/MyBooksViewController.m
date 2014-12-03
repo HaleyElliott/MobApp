@@ -40,7 +40,7 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.
-            NSLog(@"Successfully retrieved %lu scores.", objects.count);
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
             // Do something with the found objects
             for (PFObject *object in objects) {
                 [self.books addObject: object];
@@ -100,7 +100,7 @@
     PFObject *temp =self.books[indexPath.row] ;
     //NSString *amt = [NSString stringWithFormat:@"%f",temp.amount];
     NSString *tempStr = [NSString stringWithFormat:@"%@",
-                         temp[@"author"]];
+                         temp[@"title"]];
     
     cell.textLabel.text = tempStr;
     return cell;

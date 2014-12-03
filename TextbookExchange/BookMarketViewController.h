@@ -10,6 +10,5 @@
 
 @interface BookMarketViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,UISearchDisplayDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *bookMarketTable;
-- (IBAction)sortAtoZ:(id)sender;
 
 @end

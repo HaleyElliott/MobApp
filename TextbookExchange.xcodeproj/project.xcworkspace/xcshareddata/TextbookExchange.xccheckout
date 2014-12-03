@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>9B9C0933-4224-4443-BCFF-631004A83066</string>
+	<string>EE4C2179-598C-4F2A-BCF8-48F1B929C58A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TextbookExchange</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E19F2958-C2FF-4C11-B723-E101EEBFFE64</key>
-		<string>https://bitbucket.org/haleyjing/bookexchange.git</string>
+		<key>DD68F885383840DC80F6E93C7420E0A22829E3F6</key>
+		<string>https://github.com/HaleyElliott/MobApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TextbookExchange.xcodeproj/project.xcworkspace</string>
+	<string>TextbookExchange.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E19F2958-C2FF-4C11-B723-E101EEBFFE64</key>
+		<key>DD68F885383840DC80F6E93C7420E0A22829E3F6</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/haleyjing/bookexchange.git</string>
+	<string>https://github.com/HaleyElliott/MobApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E19F2958-C2FF-4C11-B723-E101EEBFFE64</string>
+	<string>DD68F885383840DC80F6E93C7420E0A22829E3F6</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E19F2958-C2FF-4C11-B723-E101EEBFFE64</string>
+			<string>DD68F885383840DC80F6E93C7420E0A22829E3F6</string>
 			<key>IDESourceControlWCCName</key>
-			<string>bookexchange</string>
+			<string>MobApp</string>
 		</dict>
 	</array>
 </dict>

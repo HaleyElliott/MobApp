@@ -76,6 +76,6 @@
     _ISBNtxt.text = @"";
     _authorTxt.text = @"";
     _titleTxt.text =@"";
-
+    
 }
 @end
