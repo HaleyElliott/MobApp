@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GcV-cR-1Qc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GcV-cR-1Qc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -454,6 +454,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXt-N0-3gJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1817" y="21"/>
+        </scene>
+        <!--Photos View Controller-->
+        <scene sceneID="xlg-Xd-rmh">
+            <objects>
+                <viewController id="RfL-qr-aQC" customClass="PhotosViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zDz-E0-LzH"/>
+                        <viewControllerLayoutGuide type="bottom" id="c4g-34-JfN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rc5-WE-Jh8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Hl-pd-XkY">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P0A-es-xW6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Photos" id="gkK-ca-apc">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="lo2-u1-UCz">
+                                            <connections>
+                                                <action selector="cameraButtonTapped:" destination="RfL-qr-aQC" id="ni7-1r-BHW"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="bXQ-Dr-wxJ">
+                                            <connections>
+                                                <action selector="refresh:" destination="RfL-qr-aQC" id="NHf-UL-gcj"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoScrollView" destination="3Hl-pd-XkY" id="Sa2-7q-qi3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGK-kq-wPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1939" y="-678"/>
         </scene>
         <!--Add Book View Controller-->
         <scene sceneID="CN1-NK-su6">

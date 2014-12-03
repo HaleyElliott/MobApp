@@ -45,6 +45,8 @@
 		36B7ADB71A2EA41E00DE2B2D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B7ADB61A2EA41E00DE2B2D /* libc++.dylib */; };
 		36B7ADBA1A2EAA3C00DE2B2D /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ADB91A2EAA3C00DE2B2D /* ChatViewController.m */; };
 		36E0339A1A0B1D83003625FD /* EditBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E033991A0B1D83003625FD /* EditBookViewController.m */; };
+		D638A3EE1A2EC68D004AB573 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D638A3ED1A2EC68D004AB573 /* PhotosViewController.m */; };
+		D638A3F41A2EC9B4004AB573 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D638A3F31A2EC9B4004AB573 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,10 @@
 		36B7ADB91A2EAA3C00DE2B2D /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		36E033981A0B1D83003625FD /* EditBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBookViewController.h; sourceTree = "<group>"; };
 		36E033991A0B1D83003625FD /* EditBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBookViewController.m; sourceTree = "<group>"; };
+		D638A3EC1A2EC68D004AB573 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		D638A3ED1A2EC68D004AB573 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		D638A3F21A2EC9B4004AB573 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		D638A3F31A2EC9B4004AB573 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,9 +204,13 @@
 		367A19AB19DD05C9006B876C /* TextbookExchange */ = {
 			isa = PBXGroup;
 			children = (
+				D638A3F21A2EC9B4004AB573 /* MBProgressHUD.h */,
+				D638A3F31A2EC9B4004AB573 /* MBProgressHUD.m */,
 				367A19B419DD05CA006B876C /* AppDelegate.h */,
 				367A19B519DD05CA006B876C /* AppDelegate.m */,
 				367A19B719DD05CA006B876C /* Main.storyboard */,
+				D638A3EC1A2EC68D004AB573 /* PhotosViewController.h */,
+				D638A3ED1A2EC68D004AB573 /* PhotosViewController.m */,
 				36B7ADB81A2EAA3C00DE2B2D /* ChatViewController.h */,
 				36B7ADB91A2EAA3C00DE2B2D /* ChatViewController.m */,
 				364CC0FF1A0B27E3008AB4D3 /* ExHistoryViewController.h */,
@@ -357,9 +367,11 @@
 				36B7ADBA1A2EAA3C00DE2B2D /* ChatViewController.m in Sources */,
 				367A19BC19DD05CA006B876C /* ViewController.m in Sources */,
 				36E0339A1A0B1D83003625FD /* EditBookViewController.m in Sources */,
+				D638A3EE1A2EC68D004AB573 /* PhotosViewController.m in Sources */,
 				364CC1011A0B27E3008AB4D3 /* ExHistoryViewController.m in Sources */,
 				364CC0FB1A06F9CB008AB4D3 /* EditUserInfoViewController.m in Sources */,
 				3668D93E1A08169A00228F6A /* MyBooksViewController.m in Sources */,
+				D638A3F41A2EC9B4004AB573 /* MBProgressHUD.m in Sources */,
 				367A19B619DD05CA006B876C /* AppDelegate.m in Sources */,
 				364CC0D819F4774B008AB4D3 /* AccountInfoViewController.m in Sources */,
 				36628FF61A0AAE9C002FDE0D /* BookMarketViewController.m in Sources */,
