@@ -40,10 +40,10 @@
 		367A19C719DD05CA006B876C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367A19A919DD05C9006B876C /* UIKit.framework */; };
 		367A19CF19DD05CA006B876C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 367A19CD19DD05CA006B876C /* InfoPlist.strings */; };
 		367A19D119DD05CA006B876C /* TextbookExchangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 367A19D019DD05CA006B876C /* TextbookExchangeTests.m */; };
-		36B7ADB21A2E9B8200DE2B2D /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B7ADB11A2E9B8200DE2B2D /* Firebase.framework */; };
 		36B7ADB51A2EA3EF00DE2B2D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B7ADB41A2EA3EF00DE2B2D /* libicucore.dylib */; };
 		36B7ADB71A2EA41E00DE2B2D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B7ADB61A2EA41E00DE2B2D /* libc++.dylib */; };
-		36B7ADBA1A2EAA3C00DE2B2D /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ADB91A2EAA3C00DE2B2D /* ChatViewController.m */; };
+		36B7ADC61A2EC5E800DE2B2D /* chatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ADC51A2EC5E800DE2B2D /* chatCell.m */; };
+		36B7ADC91A2ED02900DE2B2D /* DMChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B7ADC81A2ED02900DE2B2D /* DMChatRoomViewController.m */; };
 		36E0339A1A0B1D83003625FD /* EditBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E033991A0B1D83003625FD /* EditBookViewController.m */; };
 		D638A3F61A2EF72E004AB573 /* book_cover_not_found.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D638A3F51A2EF72E004AB573 /* book_cover_not_found.jpg */; };
 /* End PBXBuildFile section */
@@ -105,11 +105,12 @@
 		367A19CC19DD05CA006B876C /* TextbookExchangeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextbookExchangeTests-Info.plist"; sourceTree = "<group>"; };
 		367A19CE19DD05CA006B876C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		367A19D019DD05CA006B876C /* TextbookExchangeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextbookExchangeTests.m; sourceTree = "<group>"; };
-		36B7ADB11A2E9B8200DE2B2D /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		36B7ADB41A2EA3EF00DE2B2D /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		36B7ADB61A2EA41E00DE2B2D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		36B7ADB81A2EAA3C00DE2B2D /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
-		36B7ADB91A2EAA3C00DE2B2D /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		36B7ADC41A2EC5E800DE2B2D /* chatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chatCell.h; sourceTree = "<group>"; };
+		36B7ADC51A2EC5E800DE2B2D /* chatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chatCell.m; sourceTree = "<group>"; };
+		36B7ADC71A2ED02900DE2B2D /* DMChatRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMChatRoomViewController.h; sourceTree = "<group>"; };
+		36B7ADC81A2ED02900DE2B2D /* DMChatRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMChatRoomViewController.m; sourceTree = "<group>"; };
 		36E033981A0B1D83003625FD /* EditBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBookViewController.h; sourceTree = "<group>"; };
 		36E033991A0B1D83003625FD /* EditBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBookViewController.m; sourceTree = "<group>"; };
 		D638A3F51A2EF72E004AB573 /* book_cover_not_found.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = book_cover_not_found.jpg; sourceTree = "<group>"; };
@@ -132,7 +133,6 @@
 				364CC0C619F46455008AB4D3 /* CoreLocation.framework in Frameworks */,
 				364CC0C219F4643D008AB4D3 /* AudioToolbox.framework in Frameworks */,
 				367A19A819DD05C9006B876C /* CoreGraphics.framework in Frameworks */,
-				36B7ADB21A2E9B8200DE2B2D /* Firebase.framework in Frameworks */,
 				367A19AA19DD05C9006B876C /* UIKit.framework in Frameworks */,
 				367A19A619DD05C9006B876C /* Foundation.framework in Frameworks */,
 				364CC0BF19F4640C008AB4D3 /* Bolts.framework in Frameworks */,
@@ -157,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				367A19A419DD05C9006B876C /* Frameworks */,
-				36B7ADB11A2E9B8200DE2B2D /* Firebase.framework */,
 				364CC0BD19F4640C008AB4D3 /* Bolts.framework */,
 				364CC0BE19F4640C008AB4D3 /* Parse.framework */,
 				367A19AB19DD05C9006B876C /* TextbookExchange */,
@@ -203,8 +202,10 @@
 				367A19B419DD05CA006B876C /* AppDelegate.h */,
 				367A19B519DD05CA006B876C /* AppDelegate.m */,
 				367A19B719DD05CA006B876C /* Main.storyboard */,
-				36B7ADB81A2EAA3C00DE2B2D /* ChatViewController.h */,
-				36B7ADB91A2EAA3C00DE2B2D /* ChatViewController.m */,
+				36B7ADC71A2ED02900DE2B2D /* DMChatRoomViewController.h */,
+				36B7ADC81A2ED02900DE2B2D /* DMChatRoomViewController.m */,
+				36B7ADC41A2EC5E800DE2B2D /* chatCell.h */,
+				36B7ADC51A2EC5E800DE2B2D /* chatCell.m */,
 				364CC0FF1A0B27E3008AB4D3 /* ExHistoryViewController.h */,
 				364CC1001A0B27E3008AB4D3 /* ExHistoryViewController.m */,
 				36E033981A0B1D83003625FD /* EditBookViewController.h */,
@@ -358,9 +359,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36B7ADBA1A2EAA3C00DE2B2D /* ChatViewController.m in Sources */,
 				367A19BC19DD05CA006B876C /* ViewController.m in Sources */,
 				36E0339A1A0B1D83003625FD /* EditBookViewController.m in Sources */,
+				36B7ADC91A2ED02900DE2B2D /* DMChatRoomViewController.m in Sources */,
 				364CC1011A0B27E3008AB4D3 /* ExHistoryViewController.m in Sources */,
 				364CC0FB1A06F9CB008AB4D3 /* EditUserInfoViewController.m in Sources */,
 				3668D93E1A08169A00228F6A /* MyBooksViewController.m in Sources */,
@@ -371,6 +372,7 @@
 				367A19B219DD05CA006B876C /* main.m in Sources */,
 				364CC0D519F47105008AB4D3 /* RegisterViewController.m in Sources */,
 				3668D9441A08B8AD00228F6A /* BookDetailViewController.m in Sources */,
+				36B7ADC61A2EC5E800DE2B2D /* chatCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +504,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextbookExchange/TextbookExchange-Prefix.pch";
 				INFOPLIST_FILE = "TextbookExchange/TextbookExchange-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -521,7 +523,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextbookExchange/TextbookExchange-Prefix.pch";
 				INFOPLIST_FILE = "TextbookExchange/TextbookExchange-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

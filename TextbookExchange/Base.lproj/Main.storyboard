@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GcV-cR-1Qc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GcV-cR-1Qc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -656,7 +657,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GYZ-iS-FIa" kind="push" id="mgj-D1-ja7"/>
+                                    <segue destination="bK7-MW-qco" kind="push" identifier="chatter" id="yh7-yR-eqJ"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WP7-Fx-Kac">
@@ -668,7 +669,7 @@
                     <navigationItem key="navigationItem" id="dbk-U0-2mG"/>
                     <connections>
                         <outlet property="authorL" destination="bIh-6A-tab" id="2OG-Zk-J6P"/>
-                        <outlet property="chatButt" destination="KaU-19-o7m" id="IYI-fC-CVA"/>
+                        <outlet property="chatterButt" destination="KaU-19-o7m" id="m05-6g-XgD"/>
                         <outlet property="editButt" destination="Mcw-4b-cDr" id="7wM-Mb-hV6"/>
                         <outlet property="emailTView" destination="vYX-eA-Zaq" id="b7J-4R-Q4n"/>
                         <outlet property="imageView" destination="WP7-Fx-Kac" id="rKR-Du-D4g"/>
@@ -682,24 +683,92 @@
             </objects>
             <point key="canvasLocation" x="3021" y="-752"/>
         </scene>
-        <!--Chat View Controller-->
-        <scene sceneID="8OM-Gj-mBs">
+        <!--Item-->
+        <scene sceneID="4Ch-s4-iQG">
             <objects>
-                <viewController id="GYZ-iS-FIa" customClass="ChatViewController" sceneMemberID="viewController">
+                <viewController id="bK7-MW-qco" customClass="DMChatRoomViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fyL-1r-Ohi"/>
-                        <viewControllerLayoutGuide type="bottom" id="UQE-I1-8gK"/>
+                        <viewControllerLayoutGuide type="top" id="G6y-cX-WEx"/>
+                        <viewControllerLayoutGuide type="bottom" id="fTa-Hx-1PE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RKI-vG-CG4">
+                    <view key="view" contentMode="scaleToFill" id="27O-1o-aOa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="jj3-Am-kOs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="chatCellIdentifier" id="LYf-ca-y3Z" customClass="chatCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LYf-ca-y3Z" id="aUR-7W-Rv9">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UserName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xen-p9-9i8">
+                                                    <rect key="frame" x="16" y="0.0" width="82" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYq-QT-9Vs">
+                                                    <rect key="frame" x="16" y="19" width="90" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1x-xK-GSN">
+                                                    <rect key="frame" x="111" y="9" width="193" height="27"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textString" destination="a1x-xK-GSN" id="AP9-dv-Cyl"/>
+                                            <outlet property="timeLabel" destination="TYq-QT-9Vs" id="eF9-fn-WpZ"/>
+                                            <outlet property="userLabel" destination="Xen-p9-9i8" id="yd2-Ho-6SA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bK7-MW-qco" id="lF2-JL-5gH"/>
+                                    <outlet property="delegate" destination="bK7-MW-qco" id="lLp-Vq-3Sm"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PhO-1G-Xs8">
+                                <rect key="frame" x="16" y="508" width="250" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="backgroundTap:" destination="bK7-MW-qco" eventType="editingDidEnd" id="bFe-m6-Jec"/>
+                                    <action selector="textFieldDoneEditing:" destination="bK7-MW-qco" eventType="editingDidEnd" id="PdA-uc-GtG"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNw-tw-LRL">
+                                <rect key="frame" x="274" y="508" width="36" height="30"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="senderButt:" destination="bK7-MW-qco" eventType="touchUpInside" id="bZJ-LW-AmW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="L59-ph-L1K"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="Eoc-x0-RuO"/>
+                    <navigationItem key="navigationItem" id="4Cn-Q1-Dnx"/>
+                    <connections>
+                        <outlet property="chatTable" destination="jj3-Am-kOs" id="mFb-Sh-8cx"/>
+                        <outlet property="tfEntry" destination="PhO-1G-Xs8" id="ODJ-0P-dMk"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aSA-qR-qDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gaq-ba-fR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3220" y="-89"/>
+            <point key="canvasLocation" x="3214" y="32"/>
         </scene>
         <!--Edit Book View Controller-->
         <scene sceneID="1q5-qa-JqI">

@@ -9,10 +9,11 @@
 
 #import "BookDetailViewController.h"
 #import "EditBookViewController.h"
+#import "DMChatRoomViewController.h"
 
 @interface BookDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *editButt;
-@property (weak, nonatomic) IBOutlet UIButton *chatButt;
+@property (weak, nonatomic) IBOutlet UIButton *chatterButt;
 
 @property (weak, nonatomic) IBOutlet UITextView *emailTView;
 - (void)configureView;
@@ -69,11 +70,11 @@
         PFUser *currentUser = [PFUser currentUser];
         if([self.detailItem[@"ownerID"] isEqualToString:currentUser.username]){
             self.editButt.hidden = NO;
-            self.chatButt.hidden = YES;
+            self.chatterButt.hidden = YES;
         }
         else{
             self.editButt.hidden = YES;
-            self.chatButt.hidden = NO;
+            self.chatterButt.hidden = NO;
         }
       
     }
@@ -97,6 +98,10 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"editBook"]) {
+        PFObject *object = self.detailItem;
+        [[segue destinationViewController] setDetailItem:object];
+    }
+    else if ([[segue identifier] isEqualToString:@"chatter"]) {
         PFObject *object = self.detailItem;
         [[segue destinationViewController] setDetailItem:object];
     }
